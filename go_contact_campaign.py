@@ -24,7 +24,7 @@ def build_report_template_info():
     url = "https://carnovo.gocontact.es/fs/modules/report-builder/php/reportBuilderRequests.php"
 
     payload='action=downloadReport&domain=26ac59b4-3608-4b3f-9906-2824e7eb993f&' \
-            'username=data&password=5cf8c9bfc4987aa2c1191188fb41c5e650a8deef5f298d19b96289ac77af134dbe1c0da9daf43af0b5736c81a5891c68bacaea025066b86abd4a3f74a2fc7b31&' \
+            'username=data&password=f9baf4d70612f037035b52a1e4e5b254e8af565d89afcffb47920c40c11c43c7aada5d01599ab8d6aa09d379d59ecf3fcc7b699b26ad442d4d4074b52bff5c05&' \
             'api_download=true&' \
             'ownerType=campaign&' \
             'startDate={0}%2000%3A00%3A00&' \
@@ -47,7 +47,7 @@ def build_report_template_info():
           "modules/report-builder/php/reportBuilderRequests.php?action=getCsvReportFile&" \
           "domain=26ac59b4-3608-4b3f-9906-2824e7eb993f&" \
           "username=data&" \
-          "password=5cf8c9bfc4987aa2c1191188fb41c5e650a8deef5f298d19b96289ac77af134dbe1c0da9daf43af0b5736c81a5891c68bacaea025066b86abd4a3f74a2fc7b31&" \
+          "password=f9baf4d70612f037035b52a1e4e5b254e8af565d89afcffb47920c40c11c43c7aada5d01599ab8d6aa09d379d59ecf3fcc7b699b26ad442d4d4074b52bff5c05&" \
           "api_download=true&file={0}&=".format(response.text.strip('\"'))
     print(url)
     payload = {}
